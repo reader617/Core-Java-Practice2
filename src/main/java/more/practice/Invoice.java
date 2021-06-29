@@ -1,14 +1,12 @@
 package more.practice;
 
-public class Invoice 
-{
+public class Invoice {
 	private String partNumber;
 	private String description;
 	private int quantity;
 	private double price;
-	
-	public Invoice (String pn, String d, int q, double p)
-	{
+
+	public Invoice(String pn, String d, int q, double p) {
 		partNumber = pn;
 		description = d;
 		quantity = q;
@@ -36,12 +34,9 @@ public class Invoice
 	}
 
 	public void setQuantity(int quantity) {
-		if (quantity >= 0)
-		{
+		if (quantity >= 0) {
 			this.quantity = quantity;
-		}
-		else
-		{	
+		} else {
 			this.quantity = 0;
 		}
 	}
@@ -51,23 +46,18 @@ public class Invoice
 	}
 
 	public void setPrice(double price) {
-		if (price >= 0)
-		{	
+		if (price >= 0) {
 			this.price = price;
-		}
-		else
-		{
+		} else {
 			this.price = 0.0;
 		}
 	}
-	
-	public double getInvoiceAmount()
-	{
+
+	public double getInvoiceAmount() {
 		return price * quantity;
 	}
-	
-	public String toString()
-	{
+
+	public String toString() {
 		String temp = "";
 
 		temp = "Part Number: " + partNumber + "\n";
@@ -75,7 +65,7 @@ public class Invoice
 		temp += "Quantity: " + quantity + "\n";
 		temp += "Price: " + price + "\n";
 		temp += "Invoice Amount: " + getInvoiceAmount();
-		
+
 		return temp;
 	}
 }

@@ -1,11 +1,10 @@
 package more.practice;
 
-public class Person 
-{
+public class Person {
 	private String name;
 	private int age;
 	private int shoeSize;
-	
+
 	public Person(String name, int age, int shoeSize) {
 		super();
 		this.name = name;
@@ -36,14 +35,12 @@ public class Person
 	public void setShoeSize(int shoeSize) {
 		this.shoeSize = shoeSize;
 	}
-	
-	private void walking()
-	{
+
+	private void walking() {
 		System.out.println(name + " age " + age + " with shoe size " + shoeSize + " is walking.");
 	}
-	
-	public void startWalking()
-	{
+
+	public void startWalking() {
 		walking();
 	}
 }
